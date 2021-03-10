@@ -15,8 +15,6 @@ class Shoe
   
   def brand=(brand)
     @brand = brand
-    if BRANDS.find { |i| i == brand } == nil
-      BRANDS << brand
-    end
+    BRANDS << brand
   end
 end
